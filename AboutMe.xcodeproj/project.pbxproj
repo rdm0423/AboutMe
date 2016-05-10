@@ -15,6 +15,7 @@
 		68CC11651BB1AA4A003BDF43 /* AboutMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CC11641BB1AA4A003BDF43 /* AboutMeTests.swift */; };
 		FF9546D61CE1829F00332B52 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9546D51CE1829F00332B52 /* InterestsViewController.swift */; };
 		FF9546D81CE1861E00332B52 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9546D71CE1861D00332B52 /* ContactViewController.swift */; };
+		FFB5BB0D1CE23AF80089D781 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB5BB0C1CE23AF80089D781 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		68CC11661BB1AA4A003BDF43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF9546D51CE1829F00332B52 /* InterestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
 		FF9546D71CE1861D00332B52 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		FFB5BB0C1CE23AF80089D781 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB5BB0D1CE23AF80089D781 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		68CC11431BB1AA4A003BDF43 = {
 			isa = PBXGroup;
 			children = (
+				FFB5BB0C1CE23AF80089D781 /* MessageUI.framework */,
 				68CC114E1BB1AA4A003BDF43 /* AboutMe */,
 				68CC11631BB1AA4A003BDF43 /* AboutMeTests */,
 				68CC114D1BB1AA4A003BDF43 /* Products */,

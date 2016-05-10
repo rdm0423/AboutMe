@@ -24,11 +24,31 @@ class ContactViewController: UIViewController, MFMailComposeViewControllerDelega
     
     @IBAction func sendMailButtonTapped(sender: AnyObject) {
         
-        
-        
-        
+        sendEmail()
         
     }
+    
+    
+    func sendEmail() {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients(["rdm0423@gmail.com"])
+            mail.setSubject("Want to know more about you")
+            mail.setMessageBody("<p>Hi Ross, it was great getting to know you. I have a couple of questions for you, please see them below!</p>", isHTML: true)
+            
+            presentViewController(mail, animated: true, completion: nil)
+            
+        } else {
+            // show failure alert
+        }
+    }
+    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
 
     /*
     // MARK: - Navigation
