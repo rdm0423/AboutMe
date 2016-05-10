@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import MessageUI
 
-class ContactViewController: UIViewController {
+class ContactViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +22,13 @@ class ContactViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func sendMailButtonTapped(sender: AnyObject) {
+        
+        
+        
+        
+        
+    }
 
     /*
     // MARK: - Navigation
